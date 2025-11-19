@@ -1,5 +1,5 @@
 Use branches: en guide av lukas från it-gruppen
-
+```sh
 # Kontrollera att du börjar på "main" branchen
 git checkout <"mainbranchens" namn>
 
@@ -29,3 +29,4 @@ git push
 # Om du inte tidigare specifierat upstream branch behöver specifiera vilken branch 
 # du ska pusha till
 git push origin <utvecklingsbranchens namn> 
+```
