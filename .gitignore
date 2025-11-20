@@ -6,3 +6,5 @@ venv/
 *.pyc
 genrated_questions.json
 
+GMAT/
+requirements.txt
