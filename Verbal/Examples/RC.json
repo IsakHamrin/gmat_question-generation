@@ -1,0 +1,166 @@
+{
+  "topic": "verbal",
+  "subtopic": "reading_comprehension",
+  "questions": [
+    {
+      "id": "Vrc_1",
+      "subsubtopic": "main idea",
+      "skill": "identify main point",
+      "difficulty": "medium",
+      "question": "Many economists argue ... structural unemployment.",
+      "options": {
+        "A": "Automation historically increases unemployment in all industries.",
+        "B": "Modern AI automation may cause long-term unemployment unless society adapts.",
+        "C": "Governments should eliminate all repetitive labor through automation.",
+        "D": "Education systems cannot adapt to technological change.",
+        "E": "Critics misunderstand the economic impact of productivity gains."
+      },
+      "answer": "B",
+      "solution": "The passage contrasts historical automation with AI to show possible structural unemployment."
+    },
+    {
+      "id": "Vrc_2",
+      "subsubtopic": "detail inference",
+      "skill": "interpret argument",
+      "difficulty": "medium",
+      "question": "Which best describes the critics’ argument?",
+      "options": {
+        "A": "Automation creates more jobs than it eliminates.",
+        "B": "AI is essentially the same as past technological advances.",
+        "C": "AI may reduce the need for both repetitive and cognitive tasks.",
+        "D": "Educational reform is unnecessary.",
+        "E": "Productivity gains always lead to economic decline."
+      },
+      "answer": "C",
+      "solution": "Critics say AI substitutes cognitive reasoning → option C."
+    },
+    {
+      "id": "Vrc_3",
+      "subsubtopic": "primary purpose",
+      "skill": "identify purpose",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of the urban wildlife passage?",
+      "options": {
+        "A": "To argue intelligence is key.",
+        "B": "To explain why some animals thrive in cities while others do not.",
+        "C": "To describe negative effects of cities on all animals.",
+        "D": "To advocate conservation policy.",
+        "E": "To compare domestic vs wild animals."
+      },
+      "answer": "B",
+      "solution": "Passage contrasts adaptable vs non-adaptable species."
+    },
+    {
+      "id": "Vrc_4",
+      "subsubtopic": "inference",
+      "skill": "behavioral inference",
+      "difficulty": "easy",
+      "question": "Species failing to thrive in cities tend to:",
+      "options": {
+        "A": "Lack intelligence.",
+        "B": "Avoid unfamiliar environments.",
+        "C": "Have overly specialized diets.",
+        "D": "Be physically unable to navigate.",
+        "E": "Compete poorly."
+      },
+      "answer": "B",
+      "solution": "Researchers claim adaptability depends on risk-tolerant exploration."
+    },
+    {
+      "id": "Vrc_5",
+      "subsubtopic": "author purpose",
+      "skill": "purpose evaluation",
+      "difficulty": "medium",
+      "question": "What is the author’s primary purpose in the digital communities passage?",
+      "options": {
+        "A": "Argue digital > offline",
+        "B": "Critics are incorrect",
+        "C": "Present a balanced view",
+        "D": "Emotional connection requires physical presence",
+        "E": "Analyze tech limitations"
+      },
+      "answer": "C",
+      "solution": "Author summarizes both sides and concludes it is nuanced."
+    },
+    {
+      "id": "Vrc_6",
+      "subsubtopic": "inference",
+      "skill": "relationship inference",
+      "difficulty": "medium",
+      "question": "When are online interactions most likely to strengthen relationships?",
+      "options": {
+        "A": "Infrequent but formal communication",
+        "B": "When supported by offline relationships",
+        "C": "Text-only messaging",
+        "D": "When nonverbal cues are unimportant",
+        "E": "Anonymous communities"
+      },
+      "answer": "B",
+      "solution": "Passage states that offline support strengthens online bonds."
+    },
+    {
+      "id": "Vrc_7",
+      "subsubtopic": "main idea",
+      "skill": "identify main point",
+      "difficulty": "medium",
+      "question": "Recent studies in behavioral economics suggest that individuals often make financial decisions based not on objective outcomes but on how choices are framed. For example, people are more likely to invest in a fund described as '90% chance of gain' rather than one described as '10% chance of loss,' even when both provide identical expected returns. Researchers argue that such framing effects reveal systematic biases in human judgment.",
+      "options": {
+        "A": "To argue that investors have become more rational in recent years.",
+        "B": "To show that framing effects can alter financial decision-making.",
+        "C": "To claim that expected returns determine most investment behavior.",
+        "D": "To demonstrate that losses are more common than gains.",
+        "E": "To compare financial experts with inexperienced investors."
+      },
+      "answer": "B",
+      "solution": "The passage explains how framing influences investment choices — the main idea."
+    },
+    {
+      "id": "Vrc_8",
+      "subsubtopic": "inference",
+      "skill": "draw logical conclusion",
+      "difficulty": "medium",
+      "question": "What can be inferred from the passage?",
+      "options": {
+        "A": "Investment decisions are always irrational.",
+        "B": "People evaluate choices partly based on emotional reactions.",
+        "C": "Expected returns are irrelevant in financial decisions.",
+        "D": "Most investors prefer high-risk opportunities.",
+        "E": "Framing effects occur only in financial contexts."
+      },
+      "answer": "B",
+      "solution": "Framing effects imply emotional/psychological responses influence decisions."
+    },
+    {
+      "id": "Vrc_9",
+      "subsubtopic": "purpose",
+      "skill": "identify purpose",
+      "difficulty": "medium",
+      "question": "Archaeologists studying early agricultural communities have found evidence that crop domestication occurred in multiple regions independently rather than spreading from a single origin. This suggests that early farming was not a unique innovation but a repeated response to environmental pressures and population growth.",
+      "options": {
+        "A": "To argue that early farmers lacked technological sophistication.",
+        "B": "To challenge the idea that agriculture developed in only one place.",
+        "C": "To claim that environmental pressures always lead to agriculture.",
+        "D": "To show that population growth occurred before agriculture.",
+        "E": "To explain why farming replaced hunter-gatherer lifestyles."
+      },
+      "answer": "B",
+      "solution": "The author’s goal is to dispute the single-origin theory of agriculture."
+    },
+    {
+      "id": "Vrc_10",
+      "subsubtopic": "detail inference",
+      "skill": "interpret evidence",
+      "difficulty": "easy",
+      "question": "The passage suggests that crop domestication:",
+      "options": {
+        "A": "Was a rare and accidental discovery.",
+        "B": "Developed in several locations independently.",
+        "C": "Spread quickly once created.",
+        "D": "Required advanced irrigation systems.",
+        "E": "Depended mainly on trade routes."
+      },
+      "answer": "B",
+      "solution": "The passage explicitly states domestication occurred in multiple regions independently."
+    }
+  ]
+}
