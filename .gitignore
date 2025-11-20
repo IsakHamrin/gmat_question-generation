@@ -8,3 +8,5 @@ genrated_questions.json
 
 GMAT/
 requirements.txt
+*/site-packages/
+.DS_Store
