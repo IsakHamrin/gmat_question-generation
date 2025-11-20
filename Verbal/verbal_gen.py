@@ -3,60 +3,77 @@ import json
 from dotenv import load_dotenv
 from google import genai
 
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+# -------------------------------------------------------------------
+# Load API key
+# -------------------------------------------------------------------
+load_dotenv()
 
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    raise RuntimeError("GEMINI_API_KEY is not set. Check your .env file.")
+
+client = genai.Client(api_key=api_key)
+
+# -------------------------------------------------------------------
+# Path handling
+# -------------------------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+GENERATED_DIR = os.path.join(BASE_DIR, "Generated")
+os.makedirs(GENERATED_DIR, exist_ok=True)
+
+
+# -------------------------------------------------------------------
+# JSON cleaner
+# -------------------------------------------------------------------
 def clean_and_parse_json(text: str):
-    """
-    Cleans possible markdown fences and parses JSON.
-    Expects the model to return either:
-    - a list of question objects
-    - OR an object with 'questions' already.
-    """
     text = text.strip()
 
-    # Strip markdown fences if present
+    # Remove markdown code fences if the model added them
     if text.startswith("```"):
-        # Remove ```json or ``` and the trailing ```
         text = text.strip("`")
-        # In some cases there might still be a leading 'json\n'
         if text.lower().startswith("json"):
             text = text[4:].lstrip()
 
-    data = json.loads(text)
-    return data
+    return json.loads(text)
 
 
+# -------------------------------------------------------------------
+# Generate Critical Reasoning (GMAT requires exactly 6)
+# -------------------------------------------------------------------
 def generate_cr():
+
     cr_prompt = """
-You are an expert GMAT Critical Reasoning generator.
-Produce EXACTLY 6 GMAT-critical-reasoning questions in the following strict JSON schema:
+You are an expert GMAT Critical Reasoning question writer.
 
-Return EITHER:
-1) A JSON array of 6 question objects, OR
-2) A JSON object with a key "questions" that holds an array of 6 question objects.
+Produce EXACTLY **6 Critical Reasoning questions** (this is the real GMAT Focus count).
 
-Each CR question must follow this structure:
+Output MUST be:
+- either a JSON list of 6 objects
+- OR a JSON object with {"questions": [...]}
+
+Each CR question must follow:
 
 {
   "topic": "verbal",
   "subtopic": "critical_reasoning",
   "id": "VCR_x",
   "subsubtopic": "strengthen/weaken/assumption/inference/evaluate/flaw",
-  "skill": "short description of reasoning skill tested",
+  "skill": "short description",
   "difficulty": "easy/medium/hard",
   "question": "...",
   "options": {"A": "...", "B": "...", "C": "...", "D": "...", "E": "..."},
   "answer": "A/B/C/D/E",
-  "solution": "Clear and concise explanation."
+  "solution": "short explanation"
 }
 
 RULES:
-- Generate EXACTLY 6 CR items.
-- IDs must be VCR_1 through VCR_6.
-- Only ONE answer can be correct for each item.
-- Keep the CR stimuli realistic, logical, and GMAT-authentic.
-- Avoid any political, religious, or sensitive topics.
-- Output MUST be valid JSON with NO trailing text, no markdown, no comments.
+- IDs must be VCR_1 through VCR_6
+- Only one correct answer
+- No politics, religion, or sensitive topics
+- Must be authentic GMAT reasoning
+- MUST return valid JSON only with no markdown
+
+BEGIN NOW.
 """
 
     response = client.models.generate_content(
@@ -66,45 +83,50 @@ RULES:
 
     data = clean_and_parse_json(response.text)
 
-    # Normalize to a list of questions
+    # Normalize
     if isinstance(data, dict) and "questions" in data:
         questions = data["questions"]
     elif isinstance(data, list):
         questions = data
     else:
-        raise ValueError("Unexpected JSON structure from CR generation")
+        raise ValueError("Unexpected JSON returned for CR.")
 
-    # Wrap into your desired cr.json format
     cr_obj = {
         "topic": "verbal",
         "subtopic": "critical_reasoning",
         "questions": questions
     }
 
-    with open("CR_generated.json", "w", encoding="utf-8") as f:
+    out_path = os.path.join(GENERATED_DIR, "CR_generated.json")
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(cr_obj, f, ensure_ascii=False, indent=2)
 
-    print("Saved CR questions to CR_generated.json")
+    print(f"Saved CR questions to {out_path}")
 
 
+# -------------------------------------------------------------------
+# Generate Reading Comprehension (GMAT requires exactly 17)
+# -------------------------------------------------------------------
 def generate_rc():
+
     rc_prompt = """
 You are an expert GMAT Reading Comprehension generator.
-Produce a complete RC question set of EXACTLY 17 questions across 3–4 passages.
 
-You may return EITHER:
-1) A JSON array of 17 question objects, OR
-2) A JSON object with a key "questions" that holds an array of 17 question objects.
+Generate EXACTLY **17 RC questions**, grouped under **3–4 passages**.
+This matches the real GMAT Focus exam.
+
+Output MUST be:
+- either a JSON list of 17 question objects
+- OR {"questions": [...]}
 
 REQUIREMENTS:
-- 3 to 4 passages.
-- Each passage must be 120–170 words.
-- Each passage must contain 3–6 questions.
-- Total questions MUST be exactly 17.
-- Topics must vary (science, economics, sociology, history, business).
-- Tone must be academic, neutral, and GMAT-like.
+- 3 to 4 passages (each 120–170 words)
+- Each passage has 3–6 questions
+- Total must equal exactly 17
+- Academic, neutral GMAT tone
 
-FORMAT FOR EACH QUESTION OBJECT:
+Each question object must follow:
+
 {
   "topic": "verbal",
   "subtopic": "reading_comprehension",
@@ -112,23 +134,23 @@ FORMAT FOR EACH QUESTION OBJECT:
   "subsubtopic": "main idea / purpose / inference / detail / attitude / structure",
   "skill": "short description",
   "difficulty": "easy/medium/hard",
-  "passage": "ONLY INCLUDED on the FIRST question for each passage block, null for others",
+  "passage": "ONLY on first question of each passage; null otherwise",
   "question": "...",
-  "options": { "A": "...", "B": "...", "C": "...", "D": "...", "E": "..." },
+  "options": {"A": "...", "B": "...", "C": "...", "D": "...", "E": "..."},
   "answer": "A/B/C/D/E",
-  "solution": "Clear explanation."
+  "solution": "short explanation"
 }
 
 NAMING RULES:
-- IDs must be VRC_1 through VRC_17.
-- Passages must ONLY appear in the FIRST item of their group.
-- All other questions under that passage must have "passage": null.
+- IDs must be VRC_1 through VRC_17
+- Passages appear exactly once per block
 
-QUALITY RULES:
-- Questions must be GMAT-quality and unambiguous.
-- Ensure multiple question types: main idea, purpose, inference, detail, structure, attitude.
-- Distractors must be plausible but wrong.
-- Output must be VALID JSON ONLY. No markdown, no commentary.
+QUALITY:
+- Accurate reasoning
+- GMAT-style structure
+- Valid JSON only, no markdown
+
+BEGIN NOW.
 """
 
     response = client.models.generate_content(
@@ -138,27 +160,30 @@ QUALITY RULES:
 
     data = clean_and_parse_json(response.text)
 
-    # Normalize to a list of questions
+    # Normalize
     if isinstance(data, dict) and "questions" in data:
         questions = data["questions"]
     elif isinstance(data, list):
         questions = data
     else:
-        raise ValueError("Unexpected JSON structure from RC generation")
+        raise ValueError("Unexpected JSON returned for RC.")
 
-    # Wrap into your desired rc.json format
     rc_obj = {
         "topic": "verbal",
         "subtopic": "reading_comprehension",
         "questions": questions
     }
 
-    with open("RC_generated.json", "w", encoding="utf-8") as f:
+    out_path = os.path.join(GENERATED_DIR, "RC_generated.json")
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(rc_obj, f, ensure_ascii=False, indent=2)
 
-    print("Saved RC questions to RC_generated.json")
+    print(f"Saved RC questions to {out_path}")
 
 
+# -------------------------------------------------------------------
+# Run both generators
+# -------------------------------------------------------------------
 if __name__ == "__main__":
     generate_cr()
     generate_rc()

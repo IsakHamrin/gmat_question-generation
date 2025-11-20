@@ -1,0 +1,329 @@
+{
+  "topic": "verbal",
+  "subtopic": "reading_comprehension",
+  "questions": [
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_1",
+      "subsubtopic": "main idea",
+      "skill": "Identify the central point of the passage.",
+      "difficulty": "medium",
+      "passage": "The burgeoning field of personalized medicine, which tailors treatments to an individual's genetic makeup and lifestyle, faces significant hurdles. While promising for complex diseases like cancer and Alzheimer's, its widespread implementation is hampered by the immense cost of genetic sequencing and data analysis. Furthermore, regulatory frameworks are struggling to keep pace with the rapid advancements in this area, creating uncertainty for both researchers and clinicians. Ethical considerations regarding data privacy and the potential for genetic discrimination also loom large, demanding careful societal deliberation and robust policy development to ensure equitable access and prevent misuse of sensitive information. The integration of these diverse datasets into actionable clinical decisions remains a complex, ongoing challenge.",
+      "question": "What is the primary focus of the passage?",
+      "options": {
+        "A": "The ethical implications of genetic sequencing in personalized medicine.",
+        "B": "The scientific breakthroughs driving the field of personalized medicine.",
+        "C": "The challenges and complexities associated with implementing personalized medicine.",
+        "D": "The regulatory hurdles in developing new treatments for cancer and Alzheimer's.",
+        "E": "The high cost of data analysis in modern medical research."
+      },
+      "answer": "C",
+      "solution": "The passage discusses multiple obstacles to personalized medicine, including cost, regulation, and ethics, making it the central theme."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_2",
+      "subsubtopic": "detail",
+      "skill": "Locate specific information within the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "According to the passage, which of the following is NOT mentioned as a hurdle to personalized medicine?",
+      "options": {
+        "A": "The expense of genetic sequencing.",
+        "B": "The complexity of data analysis.",
+        "C": "The lack of patient interest.",
+        "D": "Regulatory uncertainty.",
+        "E": "Concerns about genetic discrimination."
+      },
+      "answer": "C",
+      "solution": "The passage explicitly mentions cost, data analysis, regulation, and ethical concerns like discrimination, but not a lack of patient interest."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_3",
+      "subsubtopic": "inference",
+      "skill": "Draw logical conclusions from the text.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The passage implies that the successful integration of personalized medicine depends on:",
+      "options": {
+        "A": "Reducing the cost of genetic sequencing to zero.",
+        "B": "Developing entirely new regulatory bodies.",
+        "C": "Overcoming significant financial, legal, and societal challenges.",
+        "D": "Focusing solely on cancer and Alzheimer's treatments.",
+        "E": "Prioritizing data privacy above all other considerations."
+      },
+      "answer": "C",
+      "solution": "The passage lists financial (cost), regulatory, and ethical/societal issues as major hurdles, indicating these must be addressed for successful integration."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_4",
+      "subsubtopic": "purpose",
+      "skill": "Determine the author's reason for writing.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The author's likely purpose in writing this passage is to:",
+      "options": {
+        "A": "Enthuse readers about the future of medical treatments.",
+        "B": "Critique the current state of medical research funding.",
+        "C": "Educate readers about the practical difficulties of a promising medical approach.",
+        "D": "Advocate for immediate legislative action on genetic data.",
+        "E": "Compare and contrast different methods of disease treatment."
+      },
+      "answer": "C",
+      "solution": "The passage presents personalized medicine as promising but focuses on the various practical challenges (cost, regulation, ethics) that need to be overcome, suggesting an educational purpose."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_5",
+      "subsubtopic": "detail",
+      "skill": "Identify specific details mentioned in the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "Which of the following complex diseases is mentioned as a potential beneficiary of personalized medicine?",
+      "options": {
+        "A": "Diabetes",
+        "B": "Heart disease",
+        "C": "Cancer",
+        "D": "Parkinson's disease",
+        "E": "Arthritis"
+      },
+      "answer": "C",
+      "solution": "The passage explicitly states that personalized medicine is promising for complex diseases like cancer and Alzheimer's."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_6",
+      "subsubtopic": "main idea",
+      "skill": "Determine the main idea of the passage.",
+      "difficulty": "medium",
+      "passage": "The deep-sea hydrothermal vents, often called 'black smokers,' are extraordinary ecosystems teeming with life in environments previously thought to be devoid of it. These vents spew superheated, mineral-rich water from the Earth's crust, providing the chemical energy that fuels chemosynthesis – the process by which microbes convert inorganic compounds into organic matter. This forms the base of a food web that includes unique species of tubeworms, mussels, and shrimp, many of which have evolved specialized adaptations to survive extreme pressures, temperatures, and toxic chemicals. The discovery of these vents has revolutionized our understanding of life's potential and the conditions under which it can arise and thrive, suggesting possibilities for extraterrestrial life.",
+      "question": "What is the central theme of the passage?",
+      "options": {
+        "A": "The geological processes that create hydrothermal vents.",
+        "B": "The discovery of unique life forms and their energy source at deep-sea hydrothermal vents.",
+        "C": "The potential for life on other planets.",
+        "D": "The specialized adaptations of deep-sea organisms.",
+        "E": "The importance of chemosynthesis for marine ecosystems."
+      },
+      "answer": "B",
+      "solution": "The passage describes the unique ecosystems at hydrothermal vents, focusing on the life they support and the chemosynthesis that drives it, which are key discoveries."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_7",
+      "subsubtopic": "detail",
+      "skill": "Extract specific details from the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "According to the passage, what process is essential for life at hydrothermal vents?",
+      "options": {
+        "A": "Photosynthesis",
+        "B": "Geothermal energy conversion",
+        "C": "Chemosynthesis",
+        "D": "Hydrothermal breakdown",
+        "E": "Mineral precipitation"
+      },
+      "answer": "C",
+      "solution": "The passage explicitly states that chemosynthesis is the process by which microbes convert inorganic compounds into organic matter, fueling life at these vents."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_8",
+      "subsubtopic": "inference",
+      "skill": "Make logical deductions based on the text.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The author suggests that the discovery of hydrothermal vent ecosystems has implications for:",
+      "options": {
+        "A": "Understanding the Earth's internal structure.",
+        "B": "Developing new methods for deep-sea mining.",
+        "C": "The search for life beyond Earth.",
+        "D": "Finding cures for marine diseases.",
+        "E": "Protecting vulnerable ocean habitats."
+      },
+      "answer": "C",
+      "solution": "The passage concludes by stating that these discoveries suggest possibilities for extraterrestrial life, directly linking the vent ecosystems to astrobiology."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_9",
+      "subsubtopic": "structure",
+      "skill": "Analyze the organization of the passage.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The passage is structured primarily to:",
+      "options": {
+        "A": "Argue for the protection of hydrothermal vents.",
+        "B": "Describe the origin and significance of hydrothermal vent ecosystems.",
+        "C": "Compare deep-sea vents with other extreme environments.",
+        "D": "Explain the biological processes of deep-sea organisms.",
+        "E": "Detail the history of deep-sea exploration."
+      },
+      "answer": "B",
+      "solution": "The passage first introduces hydrothermal vents and then explains their unique life, the energy source (chemosynthesis), and their broader significance, fitting a descriptive structure."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_10",
+      "subsubtopic": "attitude",
+      "skill": "Identify the author's tone or attitude.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The author's attitude towards hydrothermal vents and the life they support can best be described as:",
+      "options": {
+        "A": "Skeptical",
+        "B": "Indifferent",
+        "C": "Enthusiastic and amazed",
+        "D": "Cautious and concerned",
+        "E": "Objective and clinical"
+      },
+      "answer": "C",
+      "solution": "Words like 'extraordinary ecosystems teeming with life,' 'revolutionized our understanding,' and the implication of possibilities for extraterrestrial life suggest a tone of enthusiasm and amazement."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_11",
+      "subsubtopic": "main idea",
+      "skill": "Identify the main idea of the passage.",
+      "difficulty": "medium",
+      "passage": "The concept of 'cognitive load' is central to understanding how individuals learn and process information. It refers to the total amount of mental effort being used in the working memory. When cognitive load exceeds an individual's capacity, learning becomes inefficient or even impossible. Educational designers often aim to manage this load by segmenting complex information, providing clear examples, and avoiding extraneous distractions. There are three types of cognitive load: intrinsic (inherent difficulty of the material), extraneous (imposed by the way information is presented), and germane (related to schema construction and processing). Optimizing learning involves reducing extraneous load and supporting germane load while acknowledging the intrinsic load.",
+      "question": "What is the primary subject of this passage?",
+      "options": {
+        "A": "The methods used by educational designers.",
+        "B": "The different types of learning styles.",
+        "C": "The limitations of human memory.",
+        "D": "The concept and management of cognitive load in learning.",
+        "E": "The process of schema construction."
+      },
+      "answer": "D",
+      "solution": "The passage defines cognitive load, explains its impact on learning, and discusses its management through different types of load, making it the central concept."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_12",
+      "subsubtopic": "detail",
+      "skill": "Extract specific details from the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "According to the passage, which type of cognitive load is related to the inherent difficulty of the subject matter itself?",
+      "options": {
+        "A": "Extraneous cognitive load",
+        "B": "Intrinsic cognitive load",
+        "C": "Germane cognitive load",
+        "D": "Working memory load",
+        "E": "Total mental effort"
+      },
+      "answer": "B",
+      "solution": "The passage defines intrinsic load as being 'inherent difficulty of the material.'"
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_13",
+      "subsubtopic": "inference",
+      "skill": "Make inferences based on the provided text.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The passage suggests that a poorly designed presentation of information could lead to:",
+      "options": {
+        "A": "Increased germane cognitive load.",
+        "B": "Reduced intrinsic cognitive load.",
+        "C": "An overload of extraneous cognitive load.",
+        "D": "Enhanced learning efficiency.",
+        "E": "Easier schema construction."
+      },
+      "answer": "C",
+      "solution": "The passage states that extraneous load is 'imposed by the way information is presented' and that excessive cognitive load hinders learning. A poorly designed presentation would increase extraneous load."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_14",
+      "subsubtopic": "purpose",
+      "skill": "Determine the author's purpose.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "The author's main purpose in this passage is to:",
+      "options": {
+        "A": "Argue for the superiority of certain learning materials.",
+        "B": "Provide a technical definition of cognitive psychology terms.",
+        "C": "Explain the concept of cognitive load and its implications for learning design.",
+        "D": "Advocate for more research into working memory capacity.",
+        "E": "Offer specific techniques for improving memory."
+      },
+      "answer": "C",
+      "solution": "The passage defines cognitive load, explains its types, and relates it to educational design and learning efficiency, indicating the purpose is to explain the concept and its implications."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_15",
+      "subsubtopic": "detail",
+      "skill": "Identify specific information from the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "Which of the following is NOT listed as a type of cognitive load?",
+      "options": {
+        "A": "Intrinsic",
+        "B": "Extraneous",
+        "C": "Germane",
+        "D": "External",
+        "E": "All of the above are listed."
+      },
+      "answer": "D",
+      "solution": "The passage explicitly names intrinsic, extraneous, and germane cognitive load. 'External' is not mentioned as a type."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_16",
+      "subsubtopic": "inference",
+      "skill": "Draw conclusions from the passage.",
+      "difficulty": "medium",
+      "passage": null,
+      "question": "Based on the passage, an educational designer who wants to improve learning would likely prioritize:",
+      "options": {
+        "A": "Increasing the intrinsic difficulty of the material.",
+        "B": "Adding more complex examples to challenge students.",
+        "C": "Minimizing distractions and simplifying presentation.",
+        "D": "Focusing solely on schema construction.",
+        "E": "Ignoring the limitations of working memory."
+      },
+      "answer": "C",
+      "solution": "The passage suggests optimizing learning involves 'reducing extraneous load' and avoiding 'extraneous distractions,' which aligns with minimizing distractions and simplifying presentation."
+    },
+    {
+      "topic": "verbal",
+      "subtopic": "reading_comprehension",
+      "id": "VRC_17",
+      "subsubtopic": "detail",
+      "skill": "Locate specific information within the text.",
+      "difficulty": "easy",
+      "passage": null,
+      "question": "What happens to learning when cognitive load exceeds an individual's capacity?",
+      "options": {
+        "A": "Learning becomes more efficient.",
+        "B": "Learning becomes impossible or inefficient.",
+        "C": "Learning is unaffected.",
+        "D": "Students are more motivated to learn.",
+        "E": "Cognitive load decreases."
+      },
+      "answer": "B",
+      "solution": "The passage states, 'When cognitive load exceeds an individual's capacity, learning becomes inefficient or even impossible.'"
+    }
+  ]
+}
