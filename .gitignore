@@ -12,3 +12,5 @@ GMAT/
 requirements.txt
 */site-packages/
 .DS_Store
+__pycache__/
+*.pyc
