@@ -1,166 +1,245 @@
 {
-  "topic": "verbal",
-  "subtopic": "reading_comprehension",
-  "questions": [
-    {
-      "id": "Vrc_1",
-      "subsubtopic": "main idea",
-      "skill": "identify main point",
-      "difficulty": "medium",
-      "question": "Many economists argue ... structural unemployment.",
-      "options": {
-        "A": "Automation historically increases unemployment in all industries.",
-        "B": "Modern AI automation may cause long-term unemployment unless society adapts.",
-        "C": "Governments should eliminate all repetitive labor through automation.",
-        "D": "Education systems cannot adapt to technological change.",
-        "E": "Critics misunderstand the economic impact of productivity gains."
-      },
-      "answer": "B",
-      "solution": "The passage contrasts historical automation with AI to show possible structural unemployment."
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_MAINIDEA_1",
+    "subsubtopic": "main idea",
+    "skill": "Identify the central point of the passage.",
+    "difficulty": "medium",
+    "passage": "Recent advances in quantum computing have sparked excitement among researchers. However, the field faces major obstacles, including error correction challenges, high hardware costs, and the need for extremely low operating temperatures. These barriers make large-scale commercial deployment uncertain.",
+    "question": "What is the primary focus of the passage?",
+    "options": {
+      "A": "The advantages of quantum computing over classical computing",
+      "B": "The current limitations hindering widespread adoption of quantum computing",
+      "C": "The economic opportunities presented by quantum technologies",
+      "D": "The scientific principles behind quantum bit manipulation",
+      "E": "The global competition surrounding quantum research"
     },
-    {
-      "id": "Vrc_2",
-      "subsubtopic": "detail inference",
-      "skill": "interpret argument",
-      "difficulty": "medium",
-      "question": "Which best describes the critics’ argument?",
-      "options": {
-        "A": "Automation creates more jobs than it eliminates.",
-        "B": "AI is essentially the same as past technological advances.",
-        "C": "AI may reduce the need for both repetitive and cognitive tasks.",
-        "D": "Educational reform is unnecessary.",
-        "E": "Productivity gains always lead to economic decline."
-      },
-      "answer": "C",
-      "solution": "Critics say AI substitutes cognitive reasoning → option C."
+    "answer": "B",
+    "solution": "The passage focuses on the obstacles preventing broad deployment."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_MAINIDEA_2",
+    "subsubtopic": "main idea",
+    "skill": "Identify the central point of the passage.",
+    "difficulty": "medium",
+    "passage": "Archaeologists studying early human settlements in South America have uncovered evidence suggesting far earlier migration dates than previously believed. These discoveries challenge established timelines and raise new questions about migration routes and the technologies ancient groups used to survive diverse environments.",
+    "question": "What is the main purpose of the passage?",
+    "options": {
+      "A": "To argue that early humans were more technologically advanced than thought",
+      "B": "To highlight new archaeological findings that challenge existing migration timelines",
+      "C": "To advocate for additional funding for archaeological research",
+      "D": "To compare South American and African early human settlements",
+      "E": "To explain why ancient migration routes were difficult"
     },
-    {
-      "id": "Vrc_3",
-      "subsubtopic": "primary purpose",
-      "skill": "identify purpose",
-      "difficulty": "easy",
-      "question": "What is the primary purpose of the urban wildlife passage?",
-      "options": {
-        "A": "To argue intelligence is key.",
-        "B": "To explain why some animals thrive in cities while others do not.",
-        "C": "To describe negative effects of cities on all animals.",
-        "D": "To advocate conservation policy.",
-        "E": "To compare domestic vs wild animals."
-      },
-      "answer": "B",
-      "solution": "Passage contrasts adaptable vs non-adaptable species."
+    "answer": "B",
+    "solution": "The passage focuses on new evidence that shifts accepted migration dates."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_MAINIDEA_3",
+    "subsubtopic": "main idea",
+    "skill": "Identify the central point of the passage.",
+    "difficulty": "hard",
+    "passage": "Classical economists long assumed individuals act solely in rational pursuit of self-interest. Behavioral economics, however, has revealed systematic deviations from rationality, demonstrating that emotions, cognitive biases, and social pressures influence financial decision-making. These findings challenge traditional models and encourage more realistic assumptions about human behavior.",
+    "question": "What is the primary purpose of the passage?",
+    "options": {
+      "A": "To compare rational and irrational financial decisions",
+      "B": "To argue that classical economic theory is outdated",
+      "C": "To explain how behavioral economics challenges traditional economic assumptions",
+      "D": "To promote recent advances in behavioral psychology",
+      "E": "To examine the role of emotions in everyday spending"
     },
-    {
-      "id": "Vrc_4",
-      "subsubtopic": "inference",
-      "skill": "behavioral inference",
-      "difficulty": "easy",
-      "question": "Species failing to thrive in cities tend to:",
-      "options": {
-        "A": "Lack intelligence.",
-        "B": "Avoid unfamiliar environments.",
-        "C": "Have overly specialized diets.",
-        "D": "Be physically unable to navigate.",
-        "E": "Compete poorly."
-      },
-      "answer": "B",
-      "solution": "Researchers claim adaptability depends on risk-tolerant exploration."
+    "answer": "C",
+    "solution": "The passage describes how behavioral economics challenges classical assumptions."
+  },
+
+  /* DETAIL (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_DETAIL_1",
+    "subsubtopic": "detail",
+    "skill": "Identify explicit information from the passage.",
+    "difficulty": "medium",
+    "passage": "Marine biologists studying coral reefs have found that certain coral species can partially recover from bleaching events. Recovery is linked to a shift in their symbiotic algae, allowing better heat tolerance. However, repeated bleaching dramatically lowers survival chances.",
+    "question": "According to the passage, coral recovery is associated with:",
+    "options": {
+      "A": "a shift in the type of algae living within the coral",
+      "B": "colonization by new reef species",
+      "C": "cooler seasonal temperatures",
+      "D": "reduced ocean pollution",
+      "E": "increased fish population"
     },
-    {
-      "id": "Vrc_5",
-      "subsubtopic": "author purpose",
-      "skill": "purpose evaluation",
-      "difficulty": "medium",
-      "question": "What is the author’s primary purpose in the digital communities passage?",
-      "options": {
-        "A": "Argue digital > offline",
-        "B": "Critics are incorrect",
-        "C": "Present a balanced view",
-        "D": "Emotional connection requires physical presence",
-        "E": "Analyze tech limitations"
-      },
-      "answer": "C",
-      "solution": "Author summarizes both sides and concludes it is nuanced."
+    "answer": "A",
+    "solution": "The passage explicitly states that recovery is linked to algae shifts."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_DETAIL_2",
+    "subsubtopic": "detail",
+    "skill": "Identify explicit information from the passage.",
+    "difficulty": "medium",
+    "passage": "Economic historians note that early banking systems emerged to manage risks in expanding trade networks. Merchants used promissory notes and early credit mechanisms, allowing long-distance commerce to flourish even in politically unstable regions.",
+    "question": "According to the passage, what role did early banking systems play?",
+    "options": {
+      "A": "They reduced the need for currency altogether.",
+      "B": "They enabled trade to expand despite instability.",
+      "C": "They prevented merchants from taking excessive risks.",
+      "D": "They standardized exchange rates across regions.",
+      "E": "They were primarily used to collect taxes."
     },
-    {
-      "id": "Vrc_6",
-      "subsubtopic": "inference",
-      "skill": "relationship inference",
-      "difficulty": "medium",
-      "question": "When are online interactions most likely to strengthen relationships?",
-      "options": {
-        "A": "Infrequent but formal communication",
-        "B": "When supported by offline relationships",
-        "C": "Text-only messaging",
-        "D": "When nonverbal cues are unimportant",
-        "E": "Anonymous communities"
-      },
-      "answer": "B",
-      "solution": "Passage states that offline support strengthens online bonds."
+    "answer": "B",
+    "solution": "The passage states banking systems allowed expansion despite instability."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_DETAIL_3",
+    "subsubtopic": "detail",
+    "skill": "Identify explicit information from the passage.",
+    "difficulty": "hard",
+    "passage": "A recent study on urban wildlife revealed that raccoons exhibit remarkable problem-solving abilities. In controlled experiments, raccoons learned to open complex latches, especially when food rewards were present. Researchers believe access to diverse resources in urban areas accelerates their cognitive development.",
+    "question": "What does the passage explicitly state?",
+    "options": {
+      "A": "Urban raccoons outperform rural raccoons in every cognitive task.",
+      "B": "Urban environments improve raccoon intelligence through social learning.",
+      "C": "Raccoons solved latch puzzles more effectively when food was offered.",
+      "D": "Researchers trained raccoons to live in urban environments.",
+      "E": "Raccoons rely primarily on memory rather than problem-solving."
     },
-    {
-      "id": "Vrc_7",
-      "subsubtopic": "main idea",
-      "skill": "identify main point",
-      "difficulty": "medium",
-      "question": "Recent studies in behavioral economics suggest that individuals often make financial decisions based not on objective outcomes but on how choices are framed. For example, people are more likely to invest in a fund described as '90% chance of gain' rather than one described as '10% chance of loss,' even when both provide identical expected returns. Researchers argue that such framing effects reveal systematic biases in human judgment.",
-      "options": {
-        "A": "To argue that investors have become more rational in recent years.",
-        "B": "To show that framing effects can alter financial decision-making.",
-        "C": "To claim that expected returns determine most investment behavior.",
-        "D": "To demonstrate that losses are more common than gains.",
-        "E": "To compare financial experts with inexperienced investors."
-      },
-      "answer": "B",
-      "solution": "The passage explains how framing influences investment choices — the main idea."
+    "answer": "C",
+    "solution": "The passage clearly states raccoons performed better when food rewards were offered."
+  },
+
+  /* INFERENCE (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_INFERENCE_R1",
+    "subsubtopic": "inference",
+    "skill": "Drawing a logical inference",
+    "difficulty": "medium",
+    "passage": "Sociologists studying online communities found that anonymous platforms often produce more extreme opinions. Without fear of social consequences, users feel freer to express ideas they might otherwise suppress.",
+    "question": "What can be reasonably inferred?",
+    "options": {
+      "A": "Users express extreme opinions only when anonymous.",
+      "B": "Anonymity can reduce social inhibition.",
+      "C": "Online communities are inherently toxic.",
+      "D": "Most users prefer anonymity to identified accounts.",
+      "E": "Extreme opinions are always sincere."
     },
-    {
-      "id": "Vrc_8",
-      "subsubtopic": "inference",
-      "skill": "draw logical conclusion",
-      "difficulty": "medium",
-      "question": "What can be inferred from the passage?",
-      "options": {
-        "A": "Investment decisions are always irrational.",
-        "B": "People evaluate choices partly based on emotional reactions.",
-        "C": "Expected returns are irrelevant in financial decisions.",
-        "D": "Most investors prefer high-risk opportunities.",
-        "E": "Framing effects occur only in financial contexts."
-      },
-      "answer": "B",
-      "solution": "Framing effects imply emotional/psychological responses influence decisions."
+    "answer": "B",
+    "solution": "The passage states anonymity reduces fear of consequences, implying reduced social inhibition."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_INFERENCE_R2",
+    "subsubtopic": "inference",
+    "skill": "Drawing a logical inference",
+    "difficulty": "medium",
+    "passage": "Historical climatology research shows that medieval European farmers adapted to climate shifts by altering crop selection. Records indicate that cooler periods pushed farmers toward heartier grains.",
+    "question": "What can be inferred?",
+    "options": {
+      "A": "Medieval farmers understood long-term climate cycles.",
+      "B": "Climate changes influenced agricultural decisions.",
+      "C": "All grains thrive in cooler temperatures.",
+      "D": "Farmers relied primarily on livestock instead of crops.",
+      "E": "Climate was the only factor affecting crop choice."
     },
-    {
-      "id": "Vrc_9",
-      "subsubtopic": "purpose",
-      "skill": "identify purpose",
-      "difficulty": "medium",
-      "question": "Archaeologists studying early agricultural communities have found evidence that crop domestication occurred in multiple regions independently rather than spreading from a single origin. This suggests that early farming was not a unique innovation but a repeated response to environmental pressures and population growth.",
-      "options": {
-        "A": "To argue that early farmers lacked technological sophistication.",
-        "B": "To challenge the idea that agriculture developed in only one place.",
-        "C": "To claim that environmental pressures always lead to agriculture.",
-        "D": "To show that population growth occurred before agriculture.",
-        "E": "To explain why farming replaced hunter-gatherer lifestyles."
-      },
-      "answer": "B",
-      "solution": "The author’s goal is to dispute the single-origin theory of agriculture."
+    "answer": "B",
+    "solution": "The passage directly links climate changes to crop choices."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_INFERENCE_R3",
+    "subsubtopic": "inference",
+    "skill": "Drawing a logical inference",
+    "difficulty": "hard",
+    "passage": "Critics of streaming services argue that while viewers enjoy greater choice, recommendation algorithms may create narrower viewing habits by repeatedly suggesting similar content.",
+    "question": "What inference is supported?",
+    "options": {
+      "A": "Streaming services reduce overall content production.",
+      "B": "Viewers always follow algorithmic recommendations.",
+      "C": "Increased choice does not guarantee diverse viewing.",
+      "D": "Algorithms prevent viewers from discovering new content.",
+      "E": "Streaming services are less popular than cable TV."
     },
-    {
-      "id": "Vrc_10",
-      "subsubtopic": "detail inference",
-      "skill": "interpret evidence",
-      "difficulty": "easy",
-      "question": "The passage suggests that crop domestication:",
-      "options": {
-        "A": "Was a rare and accidental discovery.",
-        "B": "Developed in several locations independently.",
-        "C": "Spread quickly once created.",
-        "D": "Required advanced irrigation systems.",
-        "E": "Depended mainly on trade routes."
-      },
-      "answer": "B",
-      "solution": "The passage explicitly states domestication occurred in multiple regions independently."
-    }
-  ]
+    "answer": "C",
+    "solution": "The passage suggests more choice but narrower habits — meaning choice does not ensure diversity."
+  },
+
+  /* AUTHOR'S ATTITUDE/TONE (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_TONE_1",
+    "subsubtopic": "tone",
+    "skill": "Identifying author attitude",
+    "difficulty": "medium",
+    "passage": "Urban planners increasingly promote walkable neighborhoods, citing benefits such as reduced pollution and improved public health. Still, they acknowledge challenges, including zoning limitations and funding constraints.",
+    "question": "What is the author's tone toward walkable neighborhoods?",
+    "options": {
+      "A": "Strongly critical",
+      "B": "Cautiously supportive",
+      "C": "Entirely skeptical",
+      "D": "Indifferent",
+      "E": "Dismissive"
+    },
+    "answer": "B",
+    "solution": "The author highlights benefits but notes challenges—indicating cautious support."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_TONE_2",
+    "subsubtopic": "tone",
+    "skill": "Identifying author attitude",
+    "difficulty": "medium",
+    "passage": "Some education theorists argue that standardized testing fails to capture student creativity. While the author agrees tests have limitations, they also note that standardized measures provide useful benchmarks across schools.",
+    "question": "How does the author view standardized testing?",
+    "options": {
+      "A": "Strongly supportive",
+      "B": "Balanced and nuanced",
+      "C": "Entirely dismissive",
+      "D": "Highly skeptical",
+      "E": "Indifferent to the debate"
+    },
+    "answer": "B",
+    "solution": "The author acknowledges both strengths and weaknesses."
+  },
+
+  {
+    "topic": "verbal",
+    "subtopic": "reading_comprehension",
+    "id": "VRC_TONE_3",
+    "subsubtopic": "tone",
+    "skill": "Identifying author attitude",
+    "difficulty": "hard",
+    "passage": "Advocates for renewable energy argue that policy incentives have accelerated the transition to clean power. The author, however, warns that inconsistent implementation and political cycles risk undermining long-term progress.",
+    "question": "What best describes the author’s attitude?",
+    "options": {
+      "A": "Optimistic with reservations",
+      "B": "Entirely pessimistic",
+      "C": "Dismissive of renewable energy",
+      "D": "Unconcerned about political instability",
+      "E": "Indifferent"
+    },
+    "answer": "A",
+    "solution": "The author sees progress but warns of issues—optimistic with reservations."
+  }
 }

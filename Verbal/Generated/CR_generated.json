@@ -6,109 +6,109 @@
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_1",
-      "subsubtopic": "weaken",
-      "skill": "Weakening a causal claim",
+      "subsubtopic": "strengthen",
+      "skill": "Strengthen the argument by providing evidence that supports the conclusion.",
       "difficulty": "medium",
-      "question": "A recent study found a strong correlation between increased ice cream consumption and higher rates of drowning. Researchers have concluded that eating ice cream causes people to be more susceptible to drowning. \n\nWhich of the following, if true, most seriously weakens the researchers' conclusion?",
+      "question": "A recent study found that consumers who purchased organic produce reported feeling healthier and more energetic than those who bought conventionally grown produce. Researchers concluded that organic produce contributes to improved well-being. Which of the following, if true, most strengthens the researchers' conclusion?",
       "options": {
-        "A": "During the summer months, both ice cream consumption and swimming activities increase significantly.",
-        "B": "Drowning can occur in various bodies of water, including pools, lakes, and oceans.",
-        "C": "The study tracked ice cream consumption and drowning incidents over a period of five years.",
-        "D": "Many people who consume ice cream do not engage in swimming or water-related activities.",
-        "E": "The researchers controlled for factors such as age and geographic location in their analysis."
+        "A": "The study participants were given detailed instructions on how to prepare their produce, regardless of whether it was organic or conventional.",
+        "B": "Participants in the study were not informed whether they were receiving organic or conventional produce during the initial phase.",
+        "C": "People who are already health-conscious are more likely to choose organic produce when given the option.",
+        "D": "The study controlled for factors such as exercise levels, sleep habits, and overall diet.",
+        "E": "Conventional produce is typically less expensive than organic produce."
       },
-      "answer": "A",
-      "solution": "The conclusion is that ice cream consumption causes drowning. Option A suggests a third factor, summer weather, that could independently cause both increased ice cream consumption and increased swimming (and thus, potentially, drowning). This alternative explanation weakens the causal link between ice cream and drowning."
+      "answer": "D",
+      "solution": "Option D strengthens the argument by eliminating potential confounding variables. If the study controlled for other factors that influence health and energy, then the difference in reported well-being is more likely attributable to the organic produce itself, thus supporting the researchers' conclusion."
     },
     {
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_2",
-      "subsubtopic": "strengthen",
-      "skill": "Strengthening a deductive argument",
-      "difficulty": "easy",
-      "question": "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded. \n\nWhich of the following, if true, most strengthens the argument?",
+      "subsubtopic": "weaken",
+      "skill": "Weaken the argument by introducing information that undermines the conclusion.",
+      "difficulty": "medium",
+      "question": "The city's public library system implemented a new online reservation system for popular books to reduce wait times. Since the system's introduction, the average wait time for these books has decreased by 15%. Therefore, the new online reservation system has been effective in making popular books more accessible.",
       "options": {
-        "A": "Some warm-blooded animals are not mammals.",
-        "B": "Whales live in the ocean.",
-        "C": "The premises of the argument are true.",
-        "D": "If something is a mammal, it must be warm-blooded.",
-        "E": "All warm-blooded animals can survive in cold climates."
+        "A": "The library also increased its budget for acquiring new copies of popular books during the same period.",
+        "B": "Many patrons still prefer to reserve books in person at the library circulation desk.",
+        "C": "The previous reservation system allowed patrons to reserve books only by phone or in person.",
+        "D": "The online system requires a library card and internet access, which some patrons may not have.",
+        "E": "The decrease in wait times was most significant for books that were already less popular."
       },
-      "answer": "C",
-      "solution": "This is a deductive argument. If the premises are true (that all mammals are warm-blooded and whales are mammals), the conclusion (whales are warm-blooded) logically and necessarily follows. Strengthening the argument means confirming the truth of its premises."
+      "answer": "A",
+      "solution": "Option A weakens the conclusion by suggesting an alternative explanation for the reduced wait times. If the library simultaneously increased its collection of popular books, this action, rather than the online reservation system, could be the primary reason for shorter wait times."
     },
     {
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_3",
       "subsubtopic": "assumption",
-      "skill": "Identifying a necessary assumption",
+      "skill": "Identify an unstated premise that is necessary for the argument's conclusion.",
       "difficulty": "medium",
-      "question": "The new environmental regulation requires all factories to install advanced air filtration systems, which are very expensive. Factory owners argue that this regulation will lead to significant job losses as companies cut costs to afford the new systems. \n\nWhich of the following is an unstated assumption made by the factory owners?",
+      "question": "A recent survey indicated that companies with more flexible work-from-home policies tend to have higher employee retention rates. The survey's authors concluded that offering flexible work-from-home options is a key strategy for businesses looking to reduce employee turnover.",
       "options": {
-        "A": "The environmental regulation will be enforced strictly.",
-        "B": "The advanced air filtration systems will effectively reduce air pollution.",
-        "C": "Companies will not be able to absorb the cost of the filtration systems without reducing their workforce.",
-        "D": "New jobs will be created in the manufacturing of air filtration systems.",
-        "E": "The government will provide subsidies to help factories afford the new systems."
+        "A": "Employee retention rates are influenced by a variety of factors, including salary, benefits, and company culture.",
+        "B": "The survey respondents included companies from various industries, making it difficult to generalize the findings.",
+        "C": "Companies that can offer flexible work-from-home policies are likely already more successful and stable, possessing other desirable traits that encourage retention.",
+        "D": "A significant number of employees who work from home report increased job satisfaction.",
+        "E": "The survey did not account for the cost implications of implementing work-from-home policies."
       },
       "answer": "C",
-      "solution": "The factory owners' argument is that the cost of filtration systems will lead to job losses. This relies on the assumption that companies cannot afford both the filtration systems and maintain their current workforce levels. Option C directly states this necessary link."
+      "solution": "Option C represents an unstated assumption. The argument assumes that the flexible work-from-home policy *causes* the higher retention. However, it's possible that companies which *already* have attributes that promote retention are the ones that are also able to offer such policies. Without this assumption, the causal link between flexible policies and retention is not guaranteed."
     },
     {
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_4",
       "subsubtopic": "inference",
-      "skill": "Drawing a logical inference",
-      "difficulty": "medium",
-      "question": "In the city of Veridia, bicycles are the primary mode of transportation for a significant portion of the population. However, the number of reported bicycle thefts has been steadily increasing over the past two years. City officials are considering implementing a mandatory bicycle registration program, believing it will deter thieves. \n\nWhich of the following can be most logically inferred from the information provided?",
+      "skill": "Draw a conclusion that is most logically supported by the given information.",
+      "difficulty": "easy",
+      "question": "The manufacturer of a new brand of energy drink claims that its product is superior because it contains a unique blend of natural electrolytes and vitamins, which are essential for muscle recovery after exercise. The drink is also marketed as having a refreshing taste and being low in sugar. Consumer reviews, however, indicate that while the taste is generally praised, a significant portion of users do not feel any noticeable improvement in their post-exercise recovery compared to other sports drinks they have used.",
       "options": {
-        "A": "The mandatory bicycle registration program will successfully reduce bicycle thefts.",
-        "B": "Veridia has a higher rate of bicycle ownership than other comparable cities.",
-        "C": "Many of the stolen bicycles in Veridia are unregistered.",
-        "D": "The increasing number of bicycle thefts is a significant problem for the city's residents.",
-        "E": "Bicycle owners in Veridia are unlikely to report all bicycle thefts."
+        "A": "The energy drink is likely to be widely adopted by professional athletes.",
+        "B": "The unique blend of electrolytes and vitamins may not significantly impact muscle recovery for the average consumer.",
+        "C": "The low sugar content is the primary reason for the positive consumer reviews.",
+        "D": "Consumers are generally skeptical of claims made by energy drink manufacturers.",
+        "E": "The company will likely discontinue the product due to poor sales."
       },
-      "answer": "D",
-      "solution": "The passage states that bicycle thefts have been steadily increasing and that city officials are concerned enough to consider a new program. This implies that the increase in thefts is viewed as a problem that needs addressing, making option D the most logical inference."
+      "answer": "B",
+      "solution": "Option B is the most logical inference. The argument states that consumers praised the taste but did not notice improved recovery, despite the manufacturer's claims about its unique blend. This suggests that the claimed benefits for muscle recovery might not be as effective or noticeable as advertised for the general consumer."
     },
     {
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_5",
       "subsubtopic": "evaluate",
-      "skill": "Evaluating an argument's support",
-      "difficulty": "hard",
-      "question": "A pharmaceutical company is developing a new drug designed to improve memory recall in elderly patients. Pre-clinical trials on animals showed promising results, with significant improvements in maze navigation and object recognition tasks. The company plans to proceed with human trials, expecting similar positive outcomes. \n\nWhich of the following questions is most important to answer in order to evaluate the company's expectations?",
+      "skill": "Identify what information is most needed to assess the validity of the argument's conclusion.",
+      "difficulty": "medium",
+      "question": "A company that manufactures high-end kitchen appliances introduced a new line of smart refrigerators equipped with touchscreens and internet connectivity. Initially, sales figures for the new refrigerators were lower than projected. The company's marketing director argued that this was due to the high initial price point, which is common for innovative technology, and that sales would increase as the technology became more mainstream and prices decreased.",
       "options": {
-        "A": "Will the new drug have any side effects on elderly patients?",
-        "B": "Are the animal models used in pre-clinical trials similar to human cognitive processes?",
-        "C": "What is the current market demand for drugs that improve memory recall?",
-        "D": "How many different types of memory recall tasks were used in the animal trials?",
-        "E": "Will the human trials be conducted in multiple research facilities?"
+        "A": "The number of competing brands offering similar smart refrigerator features.",
+        "B": "The average income level of the target demographic for high-end kitchen appliances.",
+        "C": "The comparative cost of the smart refrigerators versus the company's previous, non-smart models.",
+        "D": "The sales figures of the company's other appliance lines introduced at similar price points and with new technology.",
+        "E": "Consumer awareness and understanding of the benefits offered by the smart features of the refrigerators."
       },
-      "answer": "B",
-      "solution": "The company's expectation is based on animal trial results. To evaluate this expectation, it's crucial to know if the results from animal trials are transferable to humans. Option B directly addresses the validity of using animal models for predicting human cognitive response, making it the most important question for evaluation."
+      "answer": "D",
+      "solution": "Option D is crucial for evaluating the marketing director's argument. If other new, innovative products from the same company at similar price points experienced similar initial low sales but later succeeded, it would support the director's claim that the initial price is the main obstacle and that sales will eventually rise. Without this comparative data, it's difficult to determine if the low sales are indeed due to the price point or other factors."
     },
     {
       "topic": "verbal",
       "subtopic": "critical_reasoning",
       "id": "VCR_6",
       "subsubtopic": "flaw",
-      "skill": "Identifying a logical flaw",
+      "skill": "Identify the logical error in the reasoning.",
       "difficulty": "medium",
-      "question": "The marketing team launched a new advertising campaign for their energy drink, featuring popular athletes. In the quarter following the campaign's launch, sales of the energy drink increased by 15%. The company's president concluded that the advertising campaign was directly responsible for the sales increase. \n\nWhich of the following is most similar to the flaw in the president's reasoning?",
+      "question": "The local bakery has been experiencing a decline in sales over the past year. To combat this, they decided to offer a free pastry with every purchase of a dozen pastries. After implementing this promotion, sales of individual pastries actually decreased further, leading the bakery owner to conclude that offering discounts is detrimental to their business.",
       "options": {
-        "A": "A person starts a new diet and begins exercising regularly. They lose weight. They conclude that the diet caused the weight loss, ignoring the exercise.",
-        "B": "A scientist observes that crops grow taller in soil treated with a certain fertilizer. They conclude that the fertilizer is the sole cause of increased growth, without considering other factors like sunlight and water.",
-        "C": "A student studies diligently for a test and receives a high score. They conclude that studying harder leads to better grades.",
-        "D": "A company implements a new customer service policy. Customer satisfaction ratings increase. They conclude that the new policy caused the increase in satisfaction.",
-        "E": "A city experiences a heatwave, and ice cream sales surge. The ice cream vendor concludes that the heatwave caused the increase in sales."
+        "A": "The owner assumes that the free pastry promotion was the only change implemented by the bakery.",
+        "B": "The owner draws a conclusion about all discounts based on the failure of one specific promotional strategy.",
+        "C": "The owner fails to consider that some customers might be hoarding pastries.",
+        "D": "The owner incorrectly assumes that customers prefer free pastries over discounted prices.",
+        "E": "The owner mistakes a correlation between the promotion and the sales decline for causation."
       },
-      "answer": "E",
-      "solution": "The president's reasoning is flawed because it assumes that because event B (sales increase) happened after event A (ad campaign launch), A must have caused B. This is a classic post hoc ergo propter hoc (after this, therefore because of this) fallacy. Option E presents the same logical flaw: assuming causation based solely on temporal sequence and a plausible but unproven link, ignoring other potential contributing factors (like seasonality, or other marketing efforts)."
+      "answer": "B",
+      "solution": "Option B identifies the flaw. The owner experienced a failure with one particular type of promotion (a 'buy X, get one free' deal) and then concluded that *all* discounts are detrimental. This is a faulty generalization; other types of discounts or different promotional strategies might be effective."
     }
   ]
 }

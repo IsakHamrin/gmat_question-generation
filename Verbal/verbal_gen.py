@@ -2,6 +2,7 @@ import os
 import json
 from dotenv import load_dotenv
 from google import genai
+import re
 
 # -------------------------------------------------------------------
 # Load API key
@@ -26,15 +27,33 @@ os.makedirs(GENERATED_DIR, exist_ok=True)
 # JSON cleaner
 # -------------------------------------------------------------------
 def clean_and_parse_json(text: str):
-    text = text.strip()
+    # Remove code fences
+    text = re.sub(r"```(?:json)?", "", text).strip()
 
-    # Remove markdown code fences if the model added them
-    if text.startswith("```"):
-        text = text.strip("`")
-        if text.lower().startswith("json"):
-            text = text[4:].lstrip()
+    # Attempt to extract the largest JSON-like block
+    matches = re.findall(r"\{[\s\S]*\}|\[[\s\S]*\]", text)
+    if matches:
+        text = max(matches, key=len)
 
-    return json.loads(text)
+    # Fix trailing commas in objects and arrays
+    text = re.sub(r",\s*}", "}", text)
+    text = re.sub(r",\s*]", "]", text)
+
+    # Normalize fancy quotes to standard quotes
+    text = text.replace("“", "\"").replace("”", "\"")
+    text = text.replace("\u201c", "\"").replace("\u201d", "\"")
+
+    # Compress whitespace
+    text = re.sub(r"\s+", " ", text)
+
+    # Try to load JSON
+    try:
+        return json.loads(text)
+    except Exception as e:
+        print("\n===== JSON PARSE FAILURE =====")
+        print("Raw cleaned text:", text)
+        print("==============================\n")
+        raise e
 
 
 # -------------------------------------------------------------------
@@ -43,45 +62,77 @@ def clean_and_parse_json(text: str):
 def generate_cr():
 
     cr_prompt = """
-You are an expert GMAT Critical Reasoning question writer.
+You are an expert GMAT Critical Reasoning (CR) writer.
 
-Produce EXACTLY **6 Critical Reasoning questions** (this is the real GMAT Focus count).
+Your task: Produce EXACTLY **6 Critical Reasoning questions** that follow authentic
+GMAT Focus reasoning. All content must be fully self-contained inside each question.
 
-Output MUST be:
-- either a JSON list of 6 objects
-- OR a JSON object with {"questions": [...]}
+------------------------------------------------------------------------------------
+CONTENT REQUIREMENTS
+------------------------------------------------------------------------------------
+• Select **SIX DISTINCT CR subtypes** from this list (no duplicates):
+  strengthen, weaken, assumption, inference, evaluate, flaw, paradox, complete_the_argument
 
-Each CR question must follow:
+• For each chosen subtype:
+  – randomly generate ONE completely new question
+  – no reuse of earlier questions
+  – no duplicated reasoning structures
+  – fully self-contained: the prompt must include all information needed
+  – no sensitive topics (no politics, religion, social controversies)
+
+------------------------------------------------------------------------------------
+OUTPUT FORMAT (STRICT JSON)
+------------------------------------------------------------------------------------
+Return EITHER:
+• a JSON array of 6 objects
+OR
+• {"questions": [ ... ]}
+
+Each question object must follow this exact schema:
 
 {
   "topic": "verbal",
   "subtopic": "critical_reasoning",
-  "id": "VCR_x",
-  "subsubtopic": "strengthen/weaken/assumption/inference/evaluate/flaw",
-  "skill": "short description",
+  "id": "VCR_x",                      // x = 1 through 6
+  "subsubtopic": "<chosen CR subtype>",
+  "skill": "<short description>",
   "difficulty": "easy/medium/hard",
-  "question": "...",
-  "options": {"A": "...", "B": "...", "C": "...", "D": "...", "E": "..."},
+  "question": "<full GMAT-style self-contained scenario and question>",
+  "options": {
+      "A": "...",
+      "B": "...",
+      "C": "...",
+      "D": "...",
+      "E": "..."
+  },
   "answer": "A/B/C/D/E",
-  "solution": "short explanation"
+  "solution": "<short explanation>"
 }
 
-RULES:
-- IDs must be VCR_1 through VCR_6
-- Only one correct answer
-- No politics, religion, or sensitive topics
-- Must be authentic GMAT reasoning
-- MUST return valid JSON only with no markdown
+------------------------------------------------------------------------------------
+HARD RULES
+------------------------------------------------------------------------------------
+• MUST use **6 different subsubtopics**.
+• MUST output **exactly 6** questions.
+• IDs must be numbered VCR_1, VCR_2, ..., VCR_6.
+• Every question must contain 1 fully self-contained argument (never partial).
+• All content must be newly generated.
+• MUST return **valid JSON only**, never markdown or prose outside the JSON.
 
 BEGIN NOW.
 """
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
-        contents=cr_prompt
-    )
 
-    data = clean_and_parse_json(response.text)
+
+    response = client.models.generate_content(
+    model="gemini-2.5-flash-lite",
+    contents=cr_prompt
+)
+
+    raw = response.candidates[0].content.parts[0].text
+    data = clean_and_parse_json(raw)
+
+
 
     # Normalize
     if isinstance(data, dict) and "questions" in data:
@@ -110,55 +161,79 @@ BEGIN NOW.
 def generate_rc():
 
     rc_prompt = """
-You are an expert GMAT Reading Comprehension generator.
+You are an expert GMAT Reading Comprehension (RC) writer.
 
-Generate EXACTLY **17 RC questions**, grouped under **3–4 passages**.
-This matches the real GMAT Focus exam.
+Your task: Produce EXACTLY **17 RC questions**, following authentic GMAT Focus format.
+QUALITY MUST BE EXCELLENT.
 
-Output MUST be:
-- either a JSON list of 17 question objects
-- OR {"questions": [...]}
+------------------------------------------------------------------------------------
+STRUCTURE REQUIREMENTS
+------------------------------------------------------------------------------------
+• Create **3 or 4 passages**, each 120–170 words.
+• Each passage must be academic, neutral, and balanced.
+• Distribute 17 questions across passages:
+    – Each passage must have 3–6 questions.
+    – Total MUST equal 17.
 
-REQUIREMENTS:
-- 3 to 4 passages (each 120–170 words)
-- Each passage has 3–6 questions
-- Total must equal exactly 17
-- Academic, neutral GMAT tone
+• Passages must be diverse:
+    – Choose from: science, history, economics, humanities, social science.
+    – No politics, religion, or other sensitive topics.
+    – No duplicated passages or trivial variations.
 
-Each question object must follow:
+------------------------------------------------------------------------------------
+OUTPUT FORMAT (STRICT JSON)
+------------------------------------------------------------------------------------
+Return EITHER:
+• a JSON array of 17 objects
+OR
+• {"questions": [ ... ]}
+
+Each question object MUST follow this exact schema:
 
 {
   "topic": "verbal",
   "subtopic": "reading_comprehension",
-  "id": "VRC_x",
+  "id": "VRC_x",                                  // x = 1 through 17
   "subsubtopic": "main idea / purpose / inference / detail / attitude / structure",
-  "skill": "short description",
+  "skill": "<short description>",
   "difficulty": "easy/medium/hard",
-  "passage": "ONLY on first question of each passage; null otherwise",
-  "question": "...",
-  "options": {"A": "...", "B": "...", "C": "...", "D": "...", "E": "..."},
+  "passage": "<full passage text (MUST be repeated on EVERY question linked to that passage)>",
+  "question": "<the question stem>",
+  "options": {
+      "A": "...",
+      "B": "...",
+      "C": "...",
+      "D": "...",
+      "E": "..."
+  },
   "answer": "A/B/C/D/E",
-  "solution": "short explanation"
+  "solution": "<short explanation>"
 }
 
-NAMING RULES:
-- IDs must be VRC_1 through VRC_17
-- Passages appear exactly once per block
-
-QUALITY:
-- Accurate reasoning
-- GMAT-style structure
-- Valid JSON only, no markdown
+------------------------------------------------------------------------------------
+HARD RULES
+------------------------------------------------------------------------------------
+• IDs must be exactly VRC_1 through VRC_17 in order.
+• For every question object, the field `passage` MUST contain the full passage text
+  corresponding to that question.
+  – NEVER use null, empty string, or placeholders in `passage`.
+  – All questions tied to the same passage must use EXACTLY the same passage string.
+• Each question must be logically tied to its passage.
+• MUST return **valid JSON only**, no markdown.
+• Do NOT include any commentary or text outside JSON.
 
 BEGIN NOW.
 """
 
-    response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
-        contents=rc_prompt
-    )
 
-    data = clean_and_parse_json(response.text)
+    response = client.models.generate_content(
+    model="gemini-2.5-flash-lite",
+    contents=rc_prompt
+)
+
+    raw = response.candidates[0].content.parts[0].text
+    data = clean_and_parse_json(raw)
+
 
     # Normalize
     if isinstance(data, dict) and "questions" in data:

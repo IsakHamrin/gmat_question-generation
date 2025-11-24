@@ -1,166 +1,448 @@
 {
-  "topic": "verbal",
-  "subtopic": "critical_reasoning",
-  "questions": [
-    {
-      "id": "Vcr_1",
-      "subsubtopic": "strengthen",
-      "skill": "argument strengthening",
-      "difficulty": "medium",
-      "question": "Building more highways will not reduce congestion. Which option strengthens this?",
-      "options": {
-        "A": "Projects take years",
-        "B": "Many commuters avoid driving because highways feel too crowded",
-        "C": "Public transport usage is falling",
-        "D": "Car ownership rising",
-        "E": "New highways require maintenance"
-      },
-      "answer": "B",
-      "solution": "If people avoid driving only because roads are crowded, new lanes attract them → confirms argument."
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_STRENGTHEN_1",
+    "subsubtopic": "strengthen",
+    "skill": "Strengthening an argument",
+    "difficulty": "medium",
+    "question": "A city government claims that building a new light-rail system will significantly reduce traffic congestion. The proposal is based on surveys showing high public interest in using public transportation.",
+    "options": {
+      "A": "Residents also support adding new bus routes.",
+      "B": "Cities with similar light-rail systems have seen substantial reductions in traffic congestion.",
+      "C": "The proposed light-rail line will require several years of construction.",
+      "D": "Many residents currently commute by car.",
+      "E": "The light-rail system will connect residential and commercial districts."
     },
-    {
-      "id": "Vcr_2",
-      "subsubtopic": "weaken",
-      "skill": "argument weakening",
-      "difficulty": "medium",
-      "question": "What would most weaken the supplement claim?",
-      "options": {
-        "A": "Participants varied in age",
-        "B": "Digestive discomfort",
-        "C": "Exercise improves cognition",
-        "D": "Some slept less",
-        "E": "Non-exercisers show no benefit from supplement"
-      },
-      "answer": "E",
-      "solution": "If supplement doesn’t work for non-exercisers, the supplement isn’t responsible for benefits."
+    "answer": "B",
+    "solution": "Evidence that similar systems reduced congestion strengthens the claim that the new system will reduce congestion."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_STRENGTHEN_2",
+    "subsubtopic": "strengthen",
+    "skill": "Strengthening an argument",
+    "difficulty": "medium",
+    "question": "Researchers hypothesize that a new sleep supplement increases deep sleep duration. Early tests show a correlation between supplement use and increased time spent in deep sleep.",
+    "options": {
+      "A": "Participants also exercised more during the study period.",
+      "B": "Participants using the supplement showed greater deep sleep increases than those taking a placebo.",
+      "C": "The supplement contains natural ingredients.",
+      "D": "Participants reported feeling more refreshed.",
+      "E": "Deep sleep is associated with cognitive benefits."
     },
-    {
-      "id": "Vcr_3",
-      "subsubtopic": "weaken",
-      "skill": "correlation vs causation",
-      "difficulty": "medium",
-      "question": "Which weakens the green tea stress conclusion?",
-      "options": {
-        "A": "Antioxidants lower BP",
-        "B": "Green-tea drinkers also exercise more",
-        "C": "Some use sugar",
-        "D": "Participants varied in age",
-        "E": "Stress can be reduced by many dietary changes"
-      },
-      "answer": "B",
-      "solution": "Alternative cause → exercise may lower stress instead."
+    "answer": "B",
+    "solution": "A controlled comparison against placebo provides strong evidence that the supplement itself improves deep sleep."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_STRENGTHEN_3",
+    "subsubtopic": "strengthen",
+    "skill": "Strengthening an argument",
+    "difficulty": "hard",
+    "question": "A tech company claims its new cybersecurity software reduces the risk of data breaches. The claim is based on internal tests showing fewer simulated intrusions.",
+    "options": {
+      "A": "The software is compatible with multiple operating systems.",
+      "B": "Independent security firms verified the reduction in successful intrusion attempts.",
+      "C": "The company has a strong track record of producing reliable software.",
+      "D": "Most breaches in the past year were caused by human error.",
+      "E": "The software requires annual updates."
     },
-    {
-      "id": "Vcr_4",
-      "subsubtopic": "strengthen",
-      "skill": "predict behavior",
-      "difficulty": "medium",
-      "question": "Which strengthens the museum consultant’s argument?",
-      "options": {
-        "A": "New exhibit",
-        "B": "Nearby museums charge more",
-        "C": "Visitors would come less often if prices increased",
-        "D": "Museum relies on patrons",
-        "E": "Prices haven't risen in 5 years"
-      },
-      "answer": "C",
-      "solution": "Shows raising prices directly reduces revenue → supports claim."
+    "answer": "B",
+    "solution": "Third-party verification provides unbiased support for the company’s claim."
+  },
+
+  /* WEAKEN (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_WEAKEN_1",
+    "subsubtopic": "weaken",
+    "skill": "Weakening an argument",
+    "difficulty": "medium",
+    "question": "A restaurant claims its new vegan menu increased revenue because sales rose 15% after the menu’s introduction.",
+    "options": {
+      "A": "Customer satisfaction surveys show positive feedback on the new menu.",
+      "B": "Nearby construction diverted foot traffic toward the restaurant.",
+      "C": "The vegan dishes use locally sourced ingredients.",
+      "D": "The restaurant expanded its seating capacity.",
+      "E": "The rise in sales primarily occurred on weekends."
     },
-    {
-      "id": "Vcr_5",
-      "subsubtopic": "weaken",
-      "skill": "alternate explanation",
-      "difficulty": "medium",
-      "question": "Which weakens the claim that morning workouts increase productivity?",
-      "options": {
-        "A": "Sleep duration strongly influences productivity",
-        "B": "Morning workouts shorter",
-        "C": "Evening exercisers enjoy more",
-        "D": "Some skipped workouts",
-        "E": "Different fitness levels"
-      },
-      "answer": "A",
-      "solution": "If sleep is the real cause, morning workouts aren’t responsible."
+    "answer": "B",
+    "solution": "If construction redirected more customers to the restaurant, the revenue increase may not be due to the vegan menu."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_WEAKEN_2",
+    "subsubtopic": "weaken",
+    "skill": "Weakening an argument",
+    "difficulty": "medium",
+    "question": "A company claims its new training program improved employee productivity because employees completed tasks faster afterward.",
+    "options": {
+      "A": "Employees enjoy the new training approach.",
+      "B": "A new workflow automation tool was introduced during the same period.",
+      "C": "Some employees found the training difficult.",
+      "D": "The training program lasted only one week.",
+      "E": "Employee turnover decreased."
     },
-    {
-      "id": "Vcr_6",
-      "subsubtopic": "strengthen",
-      "skill": "cause-effect strengthening",
-      "difficulty": "medium",
-      "question": "Which strengthens the argument against closing the library?",
-      "options": {
-        "A": "Visitors check out finance/job-skill books",
-        "B": "City building new arena",
-        "C": "Residents near other branches",
-        "D": "Operating costs rising",
-        "E": "Residents use free internet to job-search"
-      },
-      "answer": "E",
-      "solution": "If closure removes critical job-search resources, reliance on social programs rises → strengthens argument."
+    "answer": "B",
+    "solution": "Automation, not training, might explain the productivity increase."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_WEAKEN_3",
+    "subsubtopic": "weaken",
+    "skill": "Weakening an argument",
+    "difficulty": "hard",
+    "question": "A university claims that offering more online courses increased graduation rates. They point to higher graduation numbers since expanding online classes.",
+    "options": {
+      "A": "Students appreciate the flexibility of online courses.",
+      "B": "The university simultaneously increased financial aid availability.",
+      "C": "Online courses require fewer classroom resources.",
+      "D": "Professors received training to teach online.",
+      "E": "Other universities experienced similar trends."
     },
-    {
-      "id": "Vcr_7",
-      "subsubtopic": "strengthen",
-      "skill": "argument strengthening",
-      "difficulty": "medium",
-      "question": "A researcher claims that remote employees are more productive than office employees. The researcher cites a study showing that remote workers completed more tasks per week.",
-      "options": {
-        "A": "Remote workers tend to work in quieter environments.",
-        "B": "The study controlled for job role, experience, and project type.",
-        "C": "Many companies now offer hybrid work arrangements.",
-        "D": "Remote workers take fewer vacation days.",
-        "E": "Office workers often collaborate in person."
-      },
-      "answer": "B",
-      "solution": "Controlling variables strengthens the claim by ruling out alternative explanations."
+    "answer": "B",
+    "solution": "More financial aid could increase graduation rates independently of online course availability."
+  },
+
+  /* NECESSARY ASSUMPTION (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_ASSUMPTION_1",
+    "subsubtopic": "assumption",
+    "skill": "Identifying a necessary assumption",
+    "difficulty": "medium",
+    "question": "A company plans to switch to biodegradable packaging, expecting this change to increase customer loyalty.",
+    "options": {
+      "A": "Customers value environmental sustainability.",
+      "B": "Biodegradable packaging costs more to produce.",
+      "C": "The company will maintain current product quality.",
+      "D": "Competitors already use biodegradable packaging.",
+      "E": "Customers prefer recyclable materials to biodegradable ones."
     },
-    {
-      "id": "Vcr_8",
-      "subsubtopic": "weaken",
-      "skill": "argument weakening",
-      "difficulty": "medium",
-      "question": "A nutritionist argues that a high-protein diet improves concentration. The claim is based on surveys showing that people who consume high-protein breakfasts report better focus.",
-      "options": {
-        "A": "Some survey respondents misreported their protein intake.",
-        "B": "Most respondents also slept more than average.",
-        "C": "People follow different types of diets.",
-        "D": "Protein breakfasts are becoming more popular.",
-        "E": "Survey participants varied in age."
-      },
-      "answer": "B",
-      "solution": "Sleep is a confounding factor that could explain improved focus instead of protein."
+    "answer": "A",
+    "solution": "The plan relies on customers caring about sustainability; otherwise loyalty would not increase."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_ASSUMPTION_2",
+    "subsubtopic": "assumption",
+    "skill": "Identifying a necessary assumption",
+    "difficulty": "medium",
+    "question": "A nutritionist claims that eliminating sugary drinks from school cafeterias will reduce student obesity rates.",
+    "options": {
+      "A": "Students will not compensate by consuming sugary drinks elsewhere.",
+      "B": "Obesity is influenced by many lifestyle factors.",
+      "C": "Schools can enforce drink restrictions.",
+      "D": "Sugary drink sales contribute to school revenue.",
+      "E": "Students prefer water to soda."
     },
-    {
-      "id": "Vcr_9",
-      "subsubtopic": "evaluate",
-      "skill": "identify needed information",
-      "difficulty": "medium",
-      "question": "A city government claims that adding bike lanes will reduce traffic congestion. Which information would be most useful to evaluate this claim?",
-      "options": {
-        "A": "Whether the city has plans to expand bus routes.",
-        "B": "How many residents currently commute by bicycle.",
-        "C": "How much the bike lanes will cost to build.",
-        "D": "Whether the city receives federal transportation subsidies.",
-        "E": "How many bike accidents occurred last year."
-      },
-      "answer": "B",
-      "solution": "To reduce traffic, enough residents must realistically switch to biking."
+    "answer": "A",
+    "solution": "The intervention only reduces obesity if students don’t simply get sugary drinks from other sources."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_ASSUMPTION_3",
+    "subsubtopic": "assumption",
+    "skill": "Identifying a necessary assumption",
+    "difficulty": "hard",
+    "question": "A business consultant argues that implementing a four-day workweek will not harm productivity because employees will work more efficiently.",
+    "options": {
+      "A": "Employees will not become more stressed due to longer daily hours.",
+      "B": "Efficiency gains will fully offset the reduction in weekly hours.",
+      "C": "Most employees are satisfied with their jobs.",
+      "D": "Fewer hours reduce burnout.",
+      "E": "Remote work has similar productivity benefits."
     },
-    {
-      "id": "Vcr_10",
-      "subsubtopic": "strengthen",
-      "skill": "causal strengthening",
-      "difficulty": "hard",
-      "question": "A technology startup claims that introducing flexible work hours increased employee retention. Since implementing the policy, annual turnover fell by 20%.",
-      "options": {
-        "A": "Most employees rate flexible hours as their favorite benefit.",
-        "B": "Competitor companies did not change their retention rates during the same period.",
-        "C": "The startup also increased salaries the year before.",
-        "D": "The company hired fewer new employees last year.",
-        "E": "Industry-wide turnover rates are rising."
-      },
-      "answer": "B",
-      "solution": "A comparison group with stable turnover supports the causal link."
-    }
-  ]
+    "answer": "B",
+    "solution": "The claim requires that efficiency improvements compensate enough to maintain productivity."
+  },
+
+  /* EVALUATE (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_EVALUATE_1",
+    "subsubtopic": "evaluate",
+    "skill": "Evaluating an argument's support",
+    "difficulty": "medium",
+    "question": "A school district expects that adding coding classes will improve overall student problem-solving skills.",
+    "options": {
+      "A": "How many teachers are qualified to teach coding?",
+      "B": "Do students who take coding classes perform better on problem-solving assessments?",
+      "C": "Is coding becoming more common in other school districts?",
+      "D": "Will the new classes require new computers?",
+      "E": "Do students enjoy learning coding?"
+    },
+    "answer": "B",
+    "solution": "This directly tests whether coding improves problem-solving, which is the claim at issue."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_EVALUATE_2",
+    "subsubtopic": "evaluate",
+    "skill": "Evaluating an argument's support",
+    "difficulty": "medium",
+    "question": "A fitness company claims its new wearable device motivates users to exercise more.",
+    "options": {
+      "A": "Does increased device usage correlate with increased physical activity?",
+      "B": "Does the device come in multiple colors?",
+      "C": "Are similar devices available from competitors?",
+      "D": "How accurate are the device’s sensors?",
+      "E": "Does the device require frequent charging?"
+    },
+    "answer": "A",
+    "solution": "To evaluate the claim, it's crucial to determine if the device actually influences exercise behavior."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_EVALUATE_3",
+    "subsubtopic": "evaluate",
+    "skill": "Evaluating an argument's support",
+    "difficulty": "hard",
+    "question": "A startup expects its AI-powered tutoring software to improve student grades based on early beta-testing feedback.",
+    "options": {
+      "A": "Were beta testers representative of the broader student population?",
+      "B": "Are similar AI products available?",
+      "C": "How much will the software cost schools?",
+      "D": "Did teachers receive training to use the software?",
+      "E": "Does the software require cloud access?"
+    },
+    "answer": "A",
+    "solution": "If the testers are not representative, the expected results may not generalize, making this the key question."
+  },
+
+  /* INFERENCE (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_INFERENCE_1",
+    "subsubtopic": "inference",
+    "skill": "Drawing logical conclusions",
+    "difficulty": "medium",
+    "question": "All employees in Department A attend weekly training. Some employees in Department B also attend the training. No interns attend the training.",
+    "options": {
+      "A": "Some employees do not attend training.",
+      "B": "Some people who attend training are not from Department A.",
+      "C": "Interns attend training in other departments.",
+      "D": "Only Department A employees attend training.",
+      "E": "All employees in Department B attend training."
+    },
+    "answer": "B",
+    "solution": "Since some Department B employees attend training, not all trainees are from Department A."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_INFERENCE_2",
+    "subsubtopic": "inference",
+    "skill": "Drawing logical conclusions",
+    "difficulty": "medium",
+    "question": "A library loan policy states: All rare books must remain in the library. Some historical documents may be checked out. No rare books are historical documents.",
+    "options": {
+      "A": "Some historical documents are rare books.",
+      "B": "All historical documents must remain in the library.",
+      "C": "Some historical documents may leave the library.",
+      "D": "Rare books may be checked out.",
+      "E": "No books may be checked out."
+    },
+    "answer": "C",
+    "solution": "Historical documents can be checked out, and none are rare books."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_INFERENCE_3",
+    "subsubtopic": "inference",
+    "skill": "Drawing logical conclusions",
+    "difficulty": "hard",
+    "question": "Every project manager must submit a monthly report. Some analysts also submit monthly reports. No interns submit monthly reports.",
+    "options": {
+      "A": "Some people who submit reports are analysts.",
+      "B": "All analysts submit reports.",
+      "C": "Interns submit reports to their supervisors.",
+      "D": "Only project managers submit reports.",
+      "E": "Analysts are project managers."
+    },
+    "answer": "A",
+    "solution": "Since some analysts do submit reports, this must be true."
+  },
+
+  /* BOLDFACE (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_BOLDFACE_1",
+    "subsubtopic": "boldface",
+    "skill": "Analyzing argument structure",
+    "difficulty": "hard",
+    "question": "Consumer advocates argue that the proposed data-sharing policy should be rejected because it jeopardizes user privacy. However, a company spokesperson responds that privacy protections are adequate and that the policy is essential for improving service quality.",
+    "options": {
+      "A": "The first boldface presents the main conclusion; the second acknowledges a competing claim.",
+      "B": "The first boldface provides evidence against a policy; the second presents a counterclaim supporting it.",
+      "C": "The first boldface states background information; the second offers additional support.",
+      "D": "Both boldface portions offer evidence supporting the main conclusion.",
+      "E": "Both boldface portions acknowledge objections."
+    },
+    "answer": "B",
+    "solution": "The first argues against the policy; the second offers a counterclaim supporting it."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_BOLDFACE_2",
+    "subsubtopic": "boldface",
+    "skill": "Analyzing argument structure",
+    "difficulty": "hard",
+    "question": "Environmentalists warn that expanding offshore drilling threatens marine ecosystems. Nevertheless, economists argue that increased domestic energy production will stabilize fuel prices.",
+    "options": {
+      "A": "The first boldface acknowledges a concern; the second provides evidence for the conclusion.",
+      "B": "The first boldface is a claim opposed by the argument; the second boldface states the argument’s main conclusion.",
+      "C": "The first boldface presents a potential negative outcome; the second presents a competing economic consideration.",
+      "D": "Both boldface statements support the same conclusion.",
+      "E": "The second boldface weakens the argument of the first."
+    },
+    "answer": "C",
+    "solution": "Environmental harm vs. economic benefit—two competing considerations."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_BOLDFACE_3",
+    "subsubtopic": "boldface",
+    "skill": "Analyzing argument structure",
+    "difficulty": "hard",
+    "question": "Some commentators argue that reducing taxes will stimulate economic growth. Critics respond, however, that growth depends more on investment in public infrastructure.",
+    "options": {
+      "A": "The first boldface is a hypothesis; the second challenges its validity.",
+      "B": "The first boldface offers background; the second states the main conclusion.",
+      "C": "Both boldface statements support the same policy action.",
+      "D": "The second boldface provides evidence for the first.",
+      "E": "Both boldface statements describe economic outcomes."
+    },
+    "answer": "A",
+    "solution": "The second boldface challenges the theory presented in the first."
+  },
+
+  /* PARADOX (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_PARADOX_1",
+    "subsubtopic": "paradox",
+    "skill": "Resolving a paradox",
+    "difficulty": "medium",
+    "question": "A new gym saw membership increase by 30%, yet total monthly revenue decreased.",
+    "options": {
+      "A": "The gym reduced membership fees for new sign-ups.",
+      "B": "Members use the gym mostly on weekends.",
+      "C": "The gym expanded its class offerings.",
+      "D": "The gym hired more instructors.",
+      "E": "The gym installed new equipment."
+    },
+    "answer": "A",
+    "solution": "More members paying less money explains falling revenue despite membership growth."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_PARADOX_2",
+    "subsubtopic": "paradox",
+    "skill": "Resolving a paradox",
+    "difficulty": "medium",
+    "question": "A school’s music program became more popular, but instrument sales at the school store dropped this year.",
+    "options": {
+      "A": "Students increasingly borrow instruments from the school’s rental program.",
+      "B": "Students want more advanced music classes.",
+      "C": "The store reduced advertising.",
+      "D": "The music program received new funding.",
+      "E": "More teachers joined the program."
+    },
+    "answer": "A",
+    "solution": "If students borrow instead of buy, popularity can increase while sales fall."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_PARADOX_3",
+    "subsubtopic": "paradox",
+    "skill": "Resolving a paradox",
+    "difficulty": "hard",
+    "question": "A city installed additional public trash bins, yet reports of littering increased.",
+    "options": {
+      "A": "The bins were placed mostly in low-traffic areas.",
+      "B": "The city also hosted several large outdoor events.",
+      "C": "Recycling initiatives increased.",
+      "D": "The city raised fines for littering.",
+      "E": "Some neighborhoods requested more bins."
+    },
+    "answer": "B",
+    "solution": "Large events generate extra litter regardless of bin availability."
+  },
+
+  /* COMPLETE THE ARGUMENT (3) */
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_COMPLETE_1",
+    "subsubtopic": "complete_the_argument",
+    "skill": "Completing an argument logically",
+    "difficulty": "medium",
+    "question": "The company plans to eliminate single-use plastics. This initiative is likely to succeed because ______.",
+    "options": {
+      "A": "single-use plastic bans are becoming more common globally",
+      "B": "customers increasingly demand environmentally friendly packaging",
+      "C": "the company recently updated its logo",
+      "D": "the company competes with major retailers",
+      "E": "the company’s sales increased last year"
+    },
+    "answer": "B",
+    "solution": "Customer demand links directly to the success of the initiative."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_COMPLETE_2",
+    "subsubtopic": "complete_the_argument",
+    "skill": "Completing an argument logically",
+    "difficulty": "medium",
+    "question": "The local government expects the new bike-sharing program to reduce pollution because ______.",
+    "options": {
+      "A": "bike-sharing is popular in neighboring cities",
+      "B": "fewer people will need to drive short distances",
+      "C": "the program uses colorful bicycles",
+      "D": "the program is funded through grants",
+      "E": "the city added more bus routes"
+    },
+    "answer": "B",
+    "solution": "This option connects the program to reduced driving, which reduces pollution."
+  },
+  {
+    "topic": "verbal",
+    "subtopic": "critical_reasoning",
+    "id": "VCR_COMPLETE_3",
+    "subsubtopic": "complete_the_argument",
+    "skill": "Completing an argument logically",
+    "difficulty": "hard",
+    "question": "The research institute predicts that the shift to remote work will increase innovation because ______.",
+    "options": {
+      "A": "remote workers enjoy greater schedule flexibility",
+      "B": "remote teams communicate more frequently through digital platforms",
+      "C": "talent can now be recruited globally rather than locally",
+      "D": "many employees prefer working from home",
+      "E": "companies can reduce office expenses"
+    },
+    "answer": "C",
+    "solution": "Global talent access is logically tied to increased innovation."
+  }
 }
