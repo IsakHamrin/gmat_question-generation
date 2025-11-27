@@ -1,0 +1,23 @@
+[
+  {
+    "id": "d1",
+    "type": "Data",
+    "subtype": "graph interpretation",
+    "question": "The graph shows the temperature variation over time. At approximately what time is the temperature at its highest point shown in the graph? What is the approximate temperature at time t=8.0?",
+    "explanation1": "Observe the rightmost point on the graph. The x-coordinate of this point represents the time at which the temperature is highest. This occurs at approximately t=22.4.",
+    "explanation2": "Locate t=8.0 on the x-axis. Move vertically up to the graph line and then horizontally to the y-axis to read the corresponding temperature. This value is approximately 10401.",
+    "answer1": 1,
+    "answer2": 2,
+    "options1": [
+      "t = 7.0",
+      "t = 22.4",
+      "t = 8.0"
+    ],
+    "options2": [
+      "8460",
+      "10401",
+      "22416"
+    ],
+    "difficulty": "medium"
+  }
+]
